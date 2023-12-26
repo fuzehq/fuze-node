@@ -1,4 +1,3 @@
-import { HTTP_METHOD } from "./global.enum";
 import FuzeClient from "./index";
 const fuzeClient = new FuzeClient({
   apiKey: "YOUR_API_KEY",
@@ -7,7 +6,10 @@ const fuzeClient = new FuzeClient({
 });
 
 const main = async () => {
-  const result = await fuzeClient.request("/api/v1/org", HTTP_METHOD.GET);
+  const result = await fuzeClient.request(
+    "/api/v1/org",
+    FuzeClient.HTTP_METHOD.GET
+  );
   console.log(result);
 };
 

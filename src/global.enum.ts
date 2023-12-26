@@ -4,9 +4,4 @@ export enum HTTP_METHOD {
   PUT = "PUT",
   DELETE = "DELETE",
   PATCH = "PATCH",
-  HEAD = "HEAD",
-  OPTIONS = "OPTIONS",
-  PURGE = "PURGE",
-  LINK = "LINK",
-  UNLINK = "UNLINK",
 }

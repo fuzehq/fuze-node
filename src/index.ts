@@ -10,6 +10,8 @@ class FuzeClient {
   private readonly apiSecret: string;
   private readonly client: AxiosInstance;
 
+  public static HTTP_METHOD = HTTP_METHOD;
+
   constructor({
     baseUrl,
     apiKey,
@@ -56,7 +58,7 @@ class FuzeClient {
     );
   }
 
-  getHeaders = ({
+  private getHeaders = ({
     body = {},
     query = {},
     url,
