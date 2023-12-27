@@ -1,0 +1,19 @@
+{
+  "sourceMaps": "inline",
+  "jsc": {
+    "target": "es2021",
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true,
+      "tsx": false,
+      "dynamicImport": true
+    },
+    "keepClassNames": true,
+    "transform": {
+      "decoratorMetadata": true
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}
